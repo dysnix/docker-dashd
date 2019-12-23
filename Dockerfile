@@ -1,4 +1,6 @@
-FROM dashpay/dashd:latest
+ARG SRC_IMAGE=dashpay/dashd
+ARG SRC_IMAGE_TAG=latest
+FROM $SRC_IMAGE:$SRC_IMAGE_TAG
 
 USER root
 
