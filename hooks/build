@@ -4,4 +4,4 @@
 ## GIT_BRANCH equals both invoking branch or tag.
 docker build \
   --build-arg SRC_IMAGE_TAG=${GIT_BRANCH%%-*} \
-  -t $IMAGE_NAME -е .
+  -t $IMAGE_NAME .
