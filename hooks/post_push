@@ -8,8 +8,3 @@ if [[ ${IMAGE_NAME} != ${_stripped} ]]; then
   docker image tag ${IMAGE_NAME} ${_stripped}
   docker image push ${_stripped}
 fi
-
-## update microbadger
-if [[ -n "$MICROBADGER_TOKEN" ]]; then
-  curl -XPOST "https://hooks.microbadger.com/images/dysnix/gocd-agent-alpine/${MICROBADGER_TOKEN}"
-fi
