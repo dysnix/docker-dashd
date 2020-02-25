@@ -8,7 +8,7 @@ Docker dashd build
     1. use `Docker Tag`: `{sourceref}`
 1. Use this code as example to trigger specific version build via git tag. Check upstream docker image version exists before proceed.
 ```bash
-git clone https://github.com/blockchain-etl/docker-dashd
+git clone git@github.com:blockchain-etl/docker-dashd.git
 cd docker-dashd
 git tag 0.15
 git tag 0.15.0
